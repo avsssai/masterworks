@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ImageCard } from "./components/ImageCard";
 
 export default function Home() {
   return (
@@ -19,48 +20,38 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 relative">
-        <div className="h-screen p-4 relative isolate group">
-          <h2 className="text-black text-6xl z-10">Rem</h2>
-          <h2 className="text-black text-6xl z-10">-Brandt</h2>
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 relative m-4 gap-2 after:border-r-2 bg-gradient-custom">
+        <ImageCard
+          name1="Rem"
+          name2="-Brandt"
+          number={1}
+          imageURI="/rembrandt/rembrandt-athena.jpg"
+          alt="Painting of Athena the goddess of war by Rembrandt."
+        />
 
-          <p className="absolute left-10 bottom-0 text-primary text-[156px] hover:text-white">
-            1
-          </p>
-          <Image
-            src={"/rembrandt/rembrandt-athena.jpg"}
-            alt="Painting of Athena the goddess of war by Rembrandt."
-            // width={1280}
-            // height={1667}
-            fill
-            objectFit="cover"
-            className="-z-10 opacity-60 group-hover:opacity-50 group-hover:scale-105 group-hover:transition-transform"
-          />
-        </div>
-        <div className="h-screen p-4 relative">
-          <h2 className="text-black text-6xl">Leonardo</h2>
-          <h2 className="text-black text-6xl">Da Vinci</h2>
+        <ImageCard
+          name1="Leonardo"
+          name2="Da Vinci"
+          number={2}
+          alt="Painting of Mona List by Leonardo Da Vinci."
+          imageURI="/leonardo/Leonardo-Mona-Lisa.jpg"
+        />
 
-          <p className="absolute left-10 bottom-0 text-primary text-[156px]">
-            2
-          </p>
-        </div>
-        <div className="h-screen p-4 relative">
-          <h2 className="text-black text-6xl">Miche</h2>
-          <h2 className="text-black text-6xl">-langelo</h2>
+        <ImageCard
+          name1="Miche"
+          name2="-langelo"
+          number={3}
+          imageURI="/michelangelo/michelangelo-david.jpg"
+          alt="A photo of the statue David by Michelangelo"
+        />
 
-          <p className="absolute left-10 bottom-0 text-primary text-[156px]">
-            3
-          </p>
-        </div>
-        <div className="h-screen p-4 relative">
-          <h2 className="text-black text-6xl">Pablo</h2>
-          <h2 className="text-black text-6xl">Picasso</h2>
-
-          <p className="absolute left-10 bottom-0 text-primary text-[156px]">
-            4
-          </p>
-        </div>
+        <ImageCard
+          name1="VIncent"
+          name2="Van Gogh"
+          number={4}
+          imageURI="/vangogh/van-gogh-starry-night.jpg"
+          alt="A photo of the painting starry night by Van Gogh"
+        />
       </section>
     </main>
   );

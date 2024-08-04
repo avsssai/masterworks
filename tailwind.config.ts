@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         primary: "#FF0000",
       },
+      backgroundImage: {
+        "gradient-custom":
+          "linear-gradient(#000, #000) center/2px 100% no-repeat",
+      },
       fontFamily: {
         display: "var(--font-display)",
       },
