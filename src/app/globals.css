@@ -21,3 +21,12 @@
     text-wrap: balance;
   }
 }
+
+@layer components {
+  @media (hover: hover) and (pointer: fine) {
+    .md\:group-hover {
+      @apply block;
+      @apply text-black;
+    }
+  }
+}

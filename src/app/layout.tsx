@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Masterworks",
   description: "A gallery of masterworks by legendary artists.",
 };
+
+const InterFont = Inter({
+  subsets: ["latin"],
+  variable: "--font-primary",
+});
 
 const JagerFont = localFont({
   src: [
@@ -29,8 +35,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={JagerFont.className}>
-      <body>{children}</body>
+    <html lang="en" className={`${JagerFont.className} ${InterFont.variable}`}>
+      <body>
+        <div className="fixed top-0 p-4 w-full">
+          <p className="text-center tracking-tighter font-primary text-xs">
+            Art Gallery
+          </p>
+        </div>
+        {children}
+      </body>
     </html>
   );
 }

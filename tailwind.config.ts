@@ -17,6 +17,7 @@ const config: Config = {
       },
       fontFamily: {
         display: "var(--font-display)",
+        primary: "var(--font-primary)",
       },
     },
   },
