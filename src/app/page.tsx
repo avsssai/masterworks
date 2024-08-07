@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ImageCard } from "./components/ImageCard";
 import HorizontalScrollCarousel from "./components/HorizontalScroll";
+import { landingPageData } from "@/app/data/landingData";
 
 export default function Home() {
   return (
@@ -21,39 +22,11 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <HorizontalScrollCarousel />
+      <HorizontalScrollCarousel data={landingPageData} />
       <section className="md:grid-cols-2 lg:grid-cols-4 relative divide-x-2 after:border-r-2 bg-gradient-custom hidden md:grid">
-        <ImageCard
-          name1="Rembrandt"
-          number={1}
-          imageURI="/rembrandt/rembrandt-athena.jpg"
-          alt="Painting of Athena the goddess of war by Rembrandt."
-          painter="rembrandt"
-        />
-
-        <ImageCard
-          name1="Leonardo Da Vinci"
-          number={2}
-          alt="Painting of Mona List by Leonardo Da Vinci."
-          imageURI="/leonardo/Leonardo-Mona-Lisa.jpg"
-          painter="leonardo-da-vinci"
-        />
-
-        <ImageCard
-          name1="Michelangelo"
-          number={3}
-          imageURI="/michelangelo/michelangelo-david.jpg"
-          alt="A photo of the statue David by Michelangelo"
-          painter="michelangelo"
-        />
-
-        <ImageCard
-          name1="Vincent Van Gogh"
-          number={4}
-          imageURI="/vangogh/van-gogh-starry-night.jpg"
-          alt="A photo of the painting starry night by Van Gogh"
-          painter="vincent-van-gogh"
-        />
+        {landingPageData.map((card) => (
+          <ImageCard key={card.number} {...card} />
+        ))}
       </section>
     </main>
   );

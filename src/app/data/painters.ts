@@ -15,10 +15,12 @@ interface Painter {
 }
 
 interface Painting {
-  id: number;
+  number: number;
   name: string;
   year: string;
-  paintingURI: string;
+  imageURI: string;
+  alt: string;
+  link: string;
 }
 
 export const paintersData: IProps = {
@@ -33,28 +35,80 @@ export const paintersData: IProps = {
     displayPictureAlt: "Self potrait of the painter Rembrandt.",
     paintings: [
       {
-        id: 1,
+        number: 1,
         name: "The Night Watch",
         year: "MDCXLII",
-        paintingURI: "",
+        imageURI: "/rembrandt/rembrandt-nightwatch.jpg",
+        alt: "Image of the painting The Night Watch",
+        link: "/rembrandt/paintings/the-night-watch",
       },
       {
-        id: 2,
+        number: 2,
         name: "The Kitchen Maid",
         year: "MDCLI",
-        paintingURI: "",
+        imageURI: "/rembrandt/rembrandt-kitchenmaid.jpg",
+        alt: "Image of the painting The Kitchen Maid",
+        link: "/rembrandt/paintings/the-kitchen-maid",
       },
       {
-        id: 3,
+        number: 3,
         name: "The Artist In Studio",
         year: "MDCXXVIII",
-        paintingURI: "",
+        imageURI: "/rembrandt/rembrandt-artist.jpg",
+        alt: "Image of the painting The Artist in Studio",
+        link: "/rembrandt/paintings/the-artist-in-studio",
       },
       {
-        id: 4,
+        number: 4,
         name: "Titus As A Monk",
         year: "MDCLX",
-        paintingURI: "",
+        imageURI: "/rembrandt/rembrandt-titus.jpeg",
+        alt: "Image of the painting Titus as A Monk",
+        link: "/rembrandt/paintings/titus-as-a-monk",
+      },
+    ],
+  },
+  "leonardo-da-vinci": {
+    firstName: "Leonardo",
+    secondName: "Da Vinci",
+    displayNameFirst: "Leo",
+    displayNameSecond: "Nardo",
+    born: "MDCVI",
+    died: "MDCLXIX",
+    displayPicture: "/leonardo/leonardo-display.png",
+    displayPictureAlt: "Self potrait of the painter Leonardo Da Vinci.",
+    paintings: [
+      {
+        number: 1,
+        name: "The Mona Lisa",
+        year: "MDCXLII",
+        imageURI: "/leonardo/Leonardo-Mona-Lisa.jpg",
+        alt: "Image of the painting The Mona Lisa",
+        link: "/leonardo-da-vinci/paintings/the-mona-lisa",
+      },
+      {
+        number: 2,
+        name: "The Last Supper",
+        year: "MDCLI",
+        imageURI: "/leonardo/leonardo-last-supper.jpg",
+        alt: "Image of the painting The Last Supper",
+        link: "/leonardo-da-vinci/paintings/the-last-supper",
+      },
+      {
+        number: 3,
+        name: "The Lady And The Ermine",
+        year: "MDCXXVIII",
+        imageURI: "/leonardo/leonardo-lady-ermine.jpg",
+        alt: "Image of the painting The Lady and the Ermine by Leonardo Da Vinci",
+        link: "/leonardo-da-vinci/paintings/the-lady-and-the-ermine",
+      },
+      {
+        number: 4,
+        name: "The Virgin Of The Rocks",
+        year: "MDCLX",
+        imageURI: "/leonardo/leonardo-virgin-rocks.jpg",
+        alt: "Image of the painting The Virgin of the Rocks by Leonardo Da Vinci.",
+        link: "/leonardo-da-vinci/paintings/the-virgin-of-the-rocks",
       },
     ],
   },

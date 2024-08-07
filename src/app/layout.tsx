@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Masterworks",
@@ -36,9 +37,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${JagerFont.className} ${InterFont.variable}`}>
-      <body>
-        <div className="fixed top-0 p-4 w-full">
-          <p className="text-center tracking-tighter font-primary text-xs">
+      <body className="isolate">
+        <div className="fixed  top-0 p-4 w-full flex items-center z-5">
+          <span className="text-6xl z-10 leading-9 flex self-center mt-2">
+            <Link href={"/"}>*</Link>
+          </span>
+          <p className="text-center uppercase tracking-tighter font-primary text-xs absolute inset-x-0">
             Art Gallery
           </p>
         </div>

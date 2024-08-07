@@ -3,25 +3,18 @@ import Link from "next/link";
 
 interface IProps {
   imageURI: string;
-  name1: string;
-  name2?: string;
+  name: string;
   alt: string;
   number: number;
-  painter: string;
+  link: string;
 }
 
-export const ImageCard = ({
-  imageURI,
-  name1,
-  alt,
-  number,
-  painter,
-}: IProps) => {
+export const ImageCard = ({ imageURI, name, alt, number, link }: IProps) => {
   return (
-    <Link href={`/painters/${painter}`}>
+    <Link href={link}>
       <div className="h-screen p-4 relative isolate group [&:not(:last-child)]:border-r border-stone-500 flex-grow group">
         <h2 className="text-black text-6xl z-10 leading-10 mt-10 md:mt-16 md:group-hover:text-white break-words max-w-[6ch] hyphens-auto">
-          {name1}
+          {name}
         </h2>
         <p className="mt-4 md:group-hover:text-white font-primary text-sm">
           MDCVI - MDCLXIX
