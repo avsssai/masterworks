@@ -21,6 +21,7 @@ interface Painting {
   imageURI: string;
   alt: string;
   link: string;
+  slug: string;
 }
 
 export const paintersData: IProps = {
@@ -41,6 +42,7 @@ export const paintersData: IProps = {
         imageURI: "/rembrandt/rembrandt-nightwatch.jpg",
         alt: "Image of the painting The Night Watch",
         link: "/rembrandt/paintings/the-night-watch",
+        slug: "the-night-watch",
       },
       {
         number: 2,
@@ -49,6 +51,7 @@ export const paintersData: IProps = {
         imageURI: "/rembrandt/rembrandt-kitchenmaid.jpg",
         alt: "Image of the painting The Kitchen Maid",
         link: "/rembrandt/paintings/the-kitchen-maid",
+        slug: "the-kitchen-maid",
       },
       {
         number: 3,
@@ -57,6 +60,7 @@ export const paintersData: IProps = {
         imageURI: "/rembrandt/rembrandt-artist.jpg",
         alt: "Image of the painting The Artist in Studio",
         link: "/rembrandt/paintings/the-artist-in-studio",
+        slug: "the-artist-in-studio",
       },
       {
         number: 4,
@@ -65,6 +69,7 @@ export const paintersData: IProps = {
         imageURI: "/rembrandt/rembrandt-titus.jpeg",
         alt: "Image of the painting Titus as A Monk",
         link: "/rembrandt/paintings/titus-as-a-monk",
+        slug: "titus-as-a-monk",
       },
     ],
   },
@@ -85,6 +90,7 @@ export const paintersData: IProps = {
         imageURI: "/leonardo/Leonardo-Mona-Lisa.jpg",
         alt: "Image of the painting The Mona Lisa",
         link: "/leonardo-da-vinci/paintings/the-mona-lisa",
+        slug: "the-mona-lisa",
       },
       {
         number: 2,
@@ -93,6 +99,7 @@ export const paintersData: IProps = {
         imageURI: "/leonardo/leonardo-last-supper.jpg",
         alt: "Image of the painting The Last Supper",
         link: "/leonardo-da-vinci/paintings/the-last-supper",
+        slug: "the-last-supper",
       },
       {
         number: 3,
@@ -101,6 +108,7 @@ export const paintersData: IProps = {
         imageURI: "/leonardo/leonardo-lady-ermine.jpg",
         alt: "Image of the painting The Lady and the Ermine by Leonardo Da Vinci",
         link: "/leonardo-da-vinci/paintings/the-lady-and-the-ermine",
+        slug: "the-lady-and-the-ermine",
       },
       {
         number: 4,
@@ -109,6 +117,7 @@ export const paintersData: IProps = {
         imageURI: "/leonardo/leonardo-virgin-rocks.jpg",
         alt: "Image of the painting The Virgin of the Rocks by Leonardo Da Vinci.",
         link: "/leonardo-da-vinci/paintings/the-virgin-of-the-rocks",
+        slug: "the-virgin-of-the-rocks",
       },
     ],
   },
