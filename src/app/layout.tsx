@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${JagerFont.className} ${InterFont.variable}`}>
       <body className="isolate">
-        <div className="fixed  top-0 p-4 w-full flex items-center z-5">
+        <div className="fixed top-0 p-4 w-full flex items-center z-40">
           <span className="text-6xl z-10 leading-9 flex self-center mt-2">
             <Link href={"/"}>*</Link>
           </span>

@@ -7,19 +7,21 @@ import { landingPageData } from "@/app/data/landingData";
 export default function Home() {
   return (
     <main>
-      <section className="flex min-h-screen flex-col items-center justify-center text-primary">
-        <h1 className="text-7xl sm:text-9xl">Master</h1>
-        <h1 className="text-7xl sm:text-9xl mt-[-24px]">Works</h1>
-        <div className="flex gap-2">
-          <Link href={`/renaissance`} className="underline hover:no-underline">
-            Renaissance
-          </Link>
-          <Link href={`/contemporary`} className="underline hover:no-underline">
-            Contemporary
-          </Link>
-          <Link href={`/abstract`} className="underline hover:no-underline">
-            Abstract
-          </Link>
+      <section className="h-screen relative">
+        <div className="h-full relative flex flex-col justify-center text-primary isolate uppercase items-center leading-[4rem] md:leading-[10rem] text-center">
+          <h1 className="text-[96px] sm:text-[6rem] md:text-[14rem] lg:text-[16rem] -tracking-[10px] relative z-20">
+            Master
+          </h1>
+          <h1 className="relative text-[96px] sm:text-[6rem] md:text-[14rem] z-20 lg:text-[16rem]  md:-ml-16 -tracking-[10px] before:content-['-']">
+            <div className="absolute h-[50px] w-[38.5px] md:h-[150px] md:w-[115.5px] right-6 -top-2 md:right-14 md:-top-5 rotate-6 z-0">
+              <Image
+                src={"/leonardo/leonardo-display.png"}
+                alt={"Self potrait of Leonardo Da Vinci"}
+                fill
+              />
+            </div>
+            Works
+          </h1>
         </div>
       </section>
       <HorizontalScrollCarousel data={landingPageData} />
