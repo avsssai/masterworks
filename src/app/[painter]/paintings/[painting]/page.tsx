@@ -21,10 +21,11 @@ export default function Page({
             src={currentPainting?.imageURI}
             alt={currentPainting?.alt}
             fill
+            className="object-contain"
           />
         ) : null}
       </div>
-      <div className="mt-8 flex">
+      <div className="mt-8 sm:mt-16 flex">
         <div className="w-fit self-center">
           <div className="leading-3 text-5xl rotate-[270deg]">
             <h2>Descr</h2>
