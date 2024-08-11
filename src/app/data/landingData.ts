@@ -22,17 +22,17 @@ export const landingPageData: CardData[] = [
     link: "/painters/leonardo-da-vinci",
   },
   {
-    name: "Michelangelo",
+    name: "Vermeer",
     number: 3,
-    imageURI: "/michelangelo/michelangelo-david.jpg",
-    alt: "A photo of the statue David by Michelangelo",
-    link: "/painters/michelangelo",
+    imageURI: "/vermeer/vermeer-girl-vermeer.jpg",
+    alt: "A photo of the painting The Girl with the Pearl Earring by Johannes Vermeer",
+    link: "/painters/vermeer",
   },
   {
     name: "Vincent Van Gogh",
     number: 4,
     imageURI: "/vangogh/van-gogh-starry-night.jpg",
     alt: "A photo of the painting starry night by Van Gogh",
-    link: "/painters/vincent-van-gogh",
+    link: "/painters/vangogh",
   },
 ];
