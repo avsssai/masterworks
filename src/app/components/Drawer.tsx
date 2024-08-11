@@ -39,23 +39,23 @@ export function CustomDrawer() {
           <DrawerBody>
             <nav>
               <ul>
-                <Link href={"/artists"}>
-                  <li className="text-6xl leading-9 mb-4 md:text-9xl md:leading-[6rem] hover:underline md:mb-2">
+                <Link href={"/artists"} className="w-fit">
+                  <li className="text-6xl leading-9 mb-4 md:text-9xl md:leading-[6rem] hover:underline md:mb-2 ">
                     Artists
                   </li>
                 </Link>
-                <Link href={"/paintings"}>
-                  <li className="text-6xl leading-9 mb-4 md:text-9xl md:leading-[6rem] hover:underline md:mb-2">
+                <Link href={"/paintings"} className="w-fit">
+                  <li className="text-6xl leading-9 mb-4 md:text-9xl md:leading-[6rem] hover:underline md:mb-2 ">
                     Paintings
                   </li>
                 </Link>
-                <Link href={"/about"}>
-                  <li className="text-6xl leading-9 mb-4 md:text-9xl md:leading-[6rem] hover:underline md:mb-2">
+                <Link href={"/about"} className="w-fit">
+                  <li className="text-6xl leading-9 mb-4 md:text-9xl md:leading-[6rem] hover:underline md:mb-2 ">
                     About
                   </li>
                 </Link>
-                <Link href="/gallery">
-                  <li className="text-6xl leading-9 mb-4 md:text-9xl md:leading-[6rem] hover:underline md:mb-2">
+                <Link href="/gallery" className="w-fit">
+                  <li className="text-6xl leading-9 mb-4 md:text-9xl md:leading-[6rem] hover:underline md:mb-2 ">
                     Gallery
                   </li>
                 </Link>

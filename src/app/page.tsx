@@ -26,9 +26,6 @@ export default function Home() {
           </h1>
         </div>
       </section>
-      <div className="my-5">
-        <CustomDrawer />
-      </div>
 
       <HorizontalScrollCarousel data={landingPageData} />
       <section className="md:grid-cols-2 lg:grid-cols-4 relative divide-x-2 after:border-r-2 bg-gradient-custom hidden md:grid">
