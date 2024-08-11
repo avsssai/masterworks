@@ -13,7 +13,7 @@ export default function Page({
     <section className="min-h-screen max-w-[1200px] mx-auto p-8 flex flex-col md:flex-row md:gap-16 md:mt-8">
       <div className="flex flex-col justify-between">
         <div>
-          <h1 className="text-7xl table-caption mt-16 leading-[3.2rem] uppercase">
+          <h1 className="text-7xl table-caption mt-16 leading-[3.2rem] uppercase max-w-[300px] break-words md:max-w-md">
             {currentPainting?.name}
           </h1>
           <p className="mt-4 font-primary text-sm">{currentPainting?.year}</p>
@@ -30,7 +30,7 @@ export default function Page({
               alt={currentPainting?.alt}
               fill
               className="object-contain"
-              loading="lazy"
+              priority
             />
           ) : null}
         </div>
@@ -42,10 +42,7 @@ export default function Page({
             </div>
           </div>
           <p className="text-xs font-primary max-w-sm mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum
-            expedita itaque, aspernatur assumenda recusandae neque impedit in
-            voluptates, obcaecati numquam? Expedita ipsum commodi, obcaecati
-            ipsam necessitatibus facilis corporis culpa.
+            {currentPainting?.description}
           </p>
         </div>
       </div>

@@ -18,6 +18,7 @@ export default function Home() {
                 src={"/leonardo/leonardo-display.png"}
                 alt={"Self potrait of Leonardo Da Vinci"}
                 fill
+                priority
               />
             </div>
             Works
