@@ -32,8 +32,8 @@ export const ImageCard = ({ imageURI, name, alt, number, link }: IProps) => {
           // height={1667}
           priority
           fill
-          objectFit="cover"
-          className="-z-10 md:group-hover:block overflow-hidden hidden"
+          // objectFit="cover"
+          className="-z-10 md:group-hover:block object-cover overflow-hidden hidden"
         />
       </div>
     </Link>
