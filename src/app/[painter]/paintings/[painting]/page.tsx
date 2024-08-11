@@ -30,6 +30,7 @@ export default function Page({
               alt={currentPainting?.alt}
               fill
               className="object-contain"
+              loading="lazy"
             />
           ) : null}
         </div>
